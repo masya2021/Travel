@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Aleo:300,300italic,regular,italic,700,700italic"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Red+Hat+Text:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Magra:regular,700" rel="stylesheet" />
+
+
+    <!-- favicon -->
+    <link rel="icon" href="./Vector.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/index.js" type="module"></script>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="background__popup"></div>
+        <header class="header">
+            <div class="container">
+
+                <div class="header__inner inner">
+
+                    <div class="header__logo logo">
+                        <img src="./assets/svg/Logo__header.svg" alt="Логотип Travel Portal" class="logo__image">
+                        <span class="logo__title">Travel Portal</span>
+                    </div>
+
+                    <nav class="header__navigation navigation header__navigation-menu" id="show">
+                        <ul class="navigation__list list__burger">
+                            <li class="navigation__item">
+                                <a href="#aboutwork" class="navigation__link">How It Works</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#planTrip" class="navigation__link">Plan Your Trip</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#destinations" class="navigation__link">Destinations</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#travelstories" class="navigation__link">Travel Stories</a>
+                            </li>
+                            <li class="navigation__item navigation__item-burger navigation__item-login">
+                                <a href="#account" class="navigation__link" id="login">Account</a>
+                            </li>
+                            <li class="navigation__item navigation__item-burger">
+                                <a href="#footer__social" class="navigation__link">Social Media</a>
+                            </li>
+                        </ul>
+
+                        <button class="close__btn-burger">
+                            <svg width="30" height="30" viewbox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1751 15L22.2501 8.925C22.3866 8.76559 22.4579 8.56052 22.4498 8.35079C22.4417 8.14106 22.3548 7.94211 22.2064 7.7937C22.058 7.64529 21.859 7.55835 21.6493 7.55024C21.4395 7.54214 21.2345 7.61348 21.0751 7.75L15.0001 13.825L8.92506 7.74167C8.76564 7.60515 8.56058 7.53381 8.35085 7.54191C8.14112 7.55001 7.94217 7.63696 7.79376 7.78537C7.64534 7.93378 7.5584 8.13273 7.5503 8.34246C7.5422 8.55219 7.61354 8.75725 7.75006 8.91667L13.8251 15L7.74173 21.075C7.65449 21.1497 7.58364 21.2416 7.53362 21.345C7.4836 21.4484 7.45549 21.561 7.45106 21.6758C7.44663 21.7906 7.46597 21.905 7.50786 22.0119C7.54976 22.1189 7.61331 22.216 7.69452 22.2972C7.77573 22.3784 7.87285 22.442 7.97979 22.4839C8.08673 22.5258 8.20117 22.5451 8.31594 22.5407C8.4307 22.5362 8.54331 22.5081 8.6467 22.4581C8.75009 22.4081 8.84202 22.3372 8.91673 22.25L15.0001 16.175L21.0751 22.25C21.2345 22.3865 21.4395 22.4579 21.6493 22.4498C21.859 22.4417 22.058 22.3547 22.2064 22.2063C22.3548 22.0579 22.4417 21.8589 22.4498 21.6492C22.4579 21.4395 22.3866 21.2344 22.2501 21.075L16.1751 15Z"
+                                    fill="white" fill-opacity="0.7" />
+                            </svg>
+                        </button>
+                    </nav>
+
+
+                    <button class="header__btn btn">Login</button>
+
+
+                    <button class="burger burger__menu" id="burger__menu" type="button">
+                        <span class="burger__item" id="burger__item">Menu</span>
+                    </button>
+
+                </div>
+
+            </div>
+        </header>
+
+        <main class="main">
+
+            <div class="popup__content">
+                <h3 class="popup__title">Log in to your account</h3>
+                <button class="button__facebook button">
+                    <img src="./assets/imgMobileVersion/popUp/FacebookLogo.svg" alt="icon facebook" class="button__img">
+                    "Sign In with Facebook"
+                </button>
+                <button class="button__google button">
+                    <img src="./assets/imgMobileVersion/popUp/GoogleLogo.svg" alt="icon google" class="button__img">
+                    "Sign In with Google"
+                </button>
+                <div class="line">
+                    <div class="line__left"></div>
+                    <p class="line__text">or</p>
+                    <div class="line__right"></div>
+                </div>
+                <form action="#" class="form__popup form1">
+                    <label for="email" class="form__popup-label">E-mail</label>
+                    <input type="email" name="email" class="form__popup-input form__popup-input--style">
+                    <label for="password" class="form__popup-label">Password</label>
+                    <input type="password" name="password" class="form__popup-input form__popup-input--password">
+
+                    <button class="form__popup-btn button" type="submit" id="isSign">Sign In</button>
+                </form>
+                <div class="popup__fogot-password">Forgot Your Password?</div>
+                <hr>
+                <div class="popup__account">
+                    "Don’t have an account?"
+                    <div class="popup__account-register">Register</div>
+                </div>
+            </div>
+
+            <div class="sign__popup">
+
+                <h3 class="popup__title">Create account</h3>
+
+                <form action="#" class="form__popup form2">
+                    <label for="email" class="form__popup-label">E-mail</label>
+                    <input type="email" name="email" class="form__popup-input form__popup-input--styleup style">
+                    <label for="password" class="form__popup-label">Password</label>
+                    <input type="password" name="password" class="form__popup-input form__popup-input--passwordup">
+
+                    <button class="form__popup-btn button" type="submit" id="logIn">Sign Up</button>
+                </form>
+                <hr>
+                <div class="popup__account">
+                    "Already have an account?"
+                    <div class="popup__account-register popup__account-register2">Log in</div>
+                </div>
+
+            </div>
+
+            <section class="preview" id="aboutwork">
+                <div class="container">
+                    <div class="preview__inner">
+
+                        <h1 class="preview__title preview__title-text">Explore the beauty of the World</h1>
+
+                        <p class="preview__description">Receive personalized recommendations for countries, hotels,
+                            activities and more</p>
+
+                        <div class="preview__form form">
+                            <div class="form__box">
+                                <p class="form__text">What would you like to do?</p>
+
+                                <button class="preview__btn btn">Start Planning</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="steps" id="planTrip">
+                <div class="container">
+                    <div class="steps__inner">
+                        <h2 class="steps__title title">3 STEPS TO THE PERFECT TRIP</h2>
+
+                        <div class="steps__card">
+                            <div class="steps__card-item item">
+
+                                <div class="item__icon left-icon svg-left">
+                                    <svg class="item__image">
+                                        <use xlink:href="sprite.svg#bicycle"></use>
+                                    </svg>
+                                </div>
+                                <p class="steps__card-description steps__card-description-left">Tell us what you want to
+                                    do</p>
+
+                            </div>
+                            <div class="steps__card-item item">
+                                <div class="item__icon">
+                                    <svg class="item__image">
+                                        <use xlink:href="sprite.svg#calendar"></use>
+                                    </svg>
+                                </div>
+                                <p class="steps__card-description center steps__card-text">Share us preferable dates
+                                </p>
+                            </div>
+                            <div class="steps__card-item item">
+                                <div class="item__icon svg-right">
+                                    <svg class="item__image">
+                                        <use xlink:href="sprite.svg#plane"></use>
+                                    </svg>
+                                </div>
+                                <p class="steps__card-description right">We will give you recommendations</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="destinations" id="destinations">
+                <!-- <div class="container"> -->
+                <div class="destinations__inner">
+                    <h2 class="destinations__title title">POPULAR DESTINATIONS</h2>
+
+                    <div class="destinations__country country">
+                        <div class="country__description">
+                            <img src="./assets/img/dDestinations/spainleft.jpg" alt="spain image"
+                                class="country__description-image mobile__version">
+                            <span class="country__description-title">SPAIN</span>
+                        </div>
+                        <div class="country__description">
+                            <img src="./assets/img/dDestinations/japancenter.jpg" alt="japan image"
+                                class="country__description-image mobile__version">
+                            <span class="country__description-title">JAPAN</span>
+                        </div>
+                        <div class="country__description">
+                            <img src="./assets/img/dDestinations/usaright.jpg" alt="usa img"
+                                class="country__description-image mobile__version">
+                            <span class="country__description-title usa">USA</span>
+                        </div>
+
+                        <div class="country__arrow-left">
+                            <svg width="30" height="30" viewbox="0 0 30 30" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.0757 26.9325C20.4272 26.5809 20.6246 26.1041 20.6246 25.6069C20.6246 25.1097 20.4272 24.6329 20.0757 24.2813L10.7944 15L20.0757 5.71875C20.4172 5.36512 20.6062 4.89149 20.6019 4.39987C20.5976 3.90825 20.4005 3.43798 20.0528 3.09034C19.7052 2.7427 19.2349 2.54551 18.7433 2.54124C18.2517 2.53696 17.778 2.72595 17.4244 3.0675L6.81753 13.6744C6.46602 14.026 6.26855 14.5028 6.26855 15C6.26855 15.4972 6.46602 15.974 6.81753 16.3256L17.4244 26.9325C17.776 27.284 18.2528 27.4815 18.75 27.4815C19.2472 27.4815 19.724 27.284 20.0757 26.9325V26.9325Z"
+                                    fill=" " fill-opacity=" " />
+                            </svg>
+                        </div>
+
+                        <div class="country__arrow-right">
+                            <svg width="30" height="30" viewbox="0 0 30 30" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.92435 3.0675C9.57284 3.41911 9.37537 3.89594 9.37537 4.39312C9.37537 4.89031 9.57284 5.36713 9.92435 5.71875L19.2056 15L9.92435 24.2813C9.5828 24.6349 9.39381 25.1085 9.39808 25.6001C9.40235 26.0917 9.59955 26.562 9.94719 26.9097C10.2948 27.2573 10.7651 27.4545 11.2567 27.4588C11.7483 27.463 12.222 27.274 12.5756 26.9325L23.1825 16.3256C23.534 15.974 23.7314 15.4972 23.7314 15C23.7314 14.5028 23.534 14.026 23.1825 13.6744L12.5756 3.0675C12.224 2.71599 11.7472 2.51852 11.25 2.51852C10.7528 2.51852 10.276 2.71599 9.92435 3.0675V3.0675Z"
+                                    fill=" " />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <div class="destinations__slider">
+                        <i class="destinations__slider-item"></i>
+                        <i class="destinations__slider-item"></i>
+                        <i class="destinations__slider-item"></i>
+                    </div>
+
+                    <button class="destinations__btn btn" type="button">
+                        <img src="./assets/svg/bi_arrow-right.svg" alt="arrow right" class="btn__arrow">
+                        <span class="btn__title">Find More</span>
+                    </button>
+                </div>
+                <!-- </div> -->
+            </section>
+
+            <section class="stories" id="travelstories">
+                <h2 class="stories__title title">TRAVEL STORIES</h2>
+                <div class="stories__further">
+                    <div class="stories__inner">
+                        <div class="container">
+
+                            <div class="stories__list list">
+                                <div class="stories__list-card card">
+                                    <img src="./assets/img/stories/seaMountains.jpg" alt="sea Mountains"
+                                        class="card__image">
+
+                                    <div class="card__stories">
+                                        <h3 class="card__title">10 Photos of Attractive Thailand</h3>
+
+                                        <p class="card__description info">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                            ad
+                                            minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum
+                                            dolore
+                                            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                            sunt
+                                            in
+                                            culpa
+                                            qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit...
+                                            <a href="#" class="info__read">Read More</a>
+                                        </p>
+
+                                        <p class="card__description-mobile">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem
+                                            ipsum dolor sit a...
+                                            <a href="#" class="info__read-mobile">Read More</a></p>
+
+                                    </div>
+
+                                </div>
+                                <div class="stories__list-card card">
+                                    <img src="./assets/img/stories/gfrandCanyone.jpg" alt="frandCanyone"
+                                        class="card__image">
+
+                                    <div class="card__stories">
+                                        <h3 class="card__title">Canyonlands National Park, Utah</h3>
+
+                                        <p class="card__description info">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                            ad
+                                            minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum
+                                            dolore
+                                            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                            sunt
+                                            in
+                                            culpa
+                                            qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit...
+                                            <a href="#" class="info__read">Read More</a>
+                                        </p>
+                                        <p class="card__description-mobile">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem
+                                            ipsum dolor sit a...
+                                            <a href="#" class="info__read-mobile">Read More</a></p>
+                                    </div>
+
+                                </div>
+                                <div class="stories__list-card card">
+                                    <img src="./assets/img/stories/mountainsSnow.jpg" alt="mountainsSnow"
+                                        class="card__image">
+
+                                    <div class="card__stories">
+                                        <h3 class="card__title">I left my heart in the Mountains!</h3>
+
+                                        <p class="card__description info">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                            ad
+                                            minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum
+                                            dolore
+                                            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                            sunt
+                                            in
+                                            culpa
+                                            qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit...
+                                            <a href="#" class="info__read">Read More</a>
+                                        </p>
+                                        <p class="card__description-mobile">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem
+                                            ipsum dolor sit a...
+                                            <a href="#" class="info__read-mobile">Read More</a></p>
+                                    </div>
+
+                                </div>
+                                <div class="stories__list-card card">
+                                    <img src="./assets/img/stories/busYellow.jpg" alt="busYellow" class="card__image">
+
+                                    <div class="card__stories">
+                                        <h3 class="card__title">The Longest journey in my life!</h3>
+
+                                        <p class="card__description info">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                            ad
+                                            minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum
+                                            dolore
+                                            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                            sunt
+                                            in
+                                            culpa
+                                            qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit...
+                                            <a href="#" class="info__read">Read More</a>
+                                        </p>
+                                        <p class="card__description-mobile">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem
+                                            ipsum dolor sit a...
+                                            <a href="#" class="info__read-mobile">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="stories__btn btn" type="button">
+                                <!-- <div class="btn__general"> -->
+                                <img src="./assets/svg/bi_arrow-right.svg" alt="arrow right" class="btn__arrow">
+                                <span class="btn__title btn__title-fix">See More</span>
+                                <!-- </div> -->
+                            </button>
+
+
+                        </div>
+
+                    </div>
+                    <div class="footer__inner-mobile">
+                        <div class="footer__link-mobile">
+                            <div class="footer__link-item-mobile link">
+                                <a href="https://rs.school/js/" target="_blank">
+                                    <svg class="link__image-school-mobile">
+                                        <use xlink:href="sprite.svg#rs_school"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="footer__link-item-mobile link">
+                                <a href="https://github.com/masya2021" target="_blank">
+                                    <svg class="link__image-mobile">
+                                        <use xlink:href="sprite.svg#github"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="footer__rights-mobile">All Rights Reserved © Travel Portal</p>
+                        <ul class="footer__social-mobile" id="socials">
+                            <li class="footer__social-card-mobile social">
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <svg class="social__image-mobile">
+                                        <use xlink:href="sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-card-mobile social">
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <svg class="social__image-mobile">
+                                        <use xlink:href="sprite.svg#youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-card-mobile social">
+                                <a href="https://twitter.com/" target="_blank"> <svg class="social__image-mobile">
+                                        <use xlink:href="sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <img src="./assets/img/footer/BGFooter.jpg" alt="footer background image" class="footer__image">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__link">
+                        <div class="footer__link-item link">
+                            <a href="https://rs.school/js/" target="_blank">
+                                <svg class="link__image-school">
+                                    <use xlink:href="sprite.svg#rs_school"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer__link-item link">
+                            <a href="https://github.com/masya2021" target="_blank">
+                                <svg class="link__image">
+                                    <use xlink:href="sprite.svg#github"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="footer__rights">All Rights Reserved © Travel Portal</p>
+                    <ul class="footer__social" id="footer__social">
+                        <li class="footer__social-card social">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <svg class="social__image">
+                                    <use xlink:href="sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-card social">
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <svg class="social__image">
+                                    <use xlink:href="sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-card social">
+                            <a href="https://twitter.com/" target="_blank"> <svg class="social__image">
+                                    <use xlink:href="sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
